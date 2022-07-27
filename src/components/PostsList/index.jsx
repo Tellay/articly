@@ -31,7 +31,7 @@ function PostsList() {
   }, []);
 
   return news && news.length > 0 ? (
-    <div className='w-full h-[calc(100%+92px)] flex flex-col items-center px-[345px] py-[154px] overflow-y-auto'>
+    <div className='w-full h-[calc(100%+92px)] flex flex-col items-center overflow-y-auto px-[345px] py-[154px]'>
       <p className='mr-auto mb-2 text-[14px] text-[#A8A8B3]'>Filter by</p>
       <div className="w-full flex flex-wrap items-center gap-4 mb-8">
         {
