@@ -3,11 +3,11 @@ import ReactLoading from "react-loading";
 
 import { fetchNewsApi } from "../../api";
 
-import Post from '../Post';
+import New from '../New';
 
 import Categories from "../../assets/categories.json";
 
-function PostsList() {
+function NewsList() {
 
   const [news, setNews] = useState([]);
   const [active, setActive] = useState("technology");
@@ -45,7 +45,7 @@ function PostsList() {
 
       {
         news.map((article) => (
-          <Post
+          <New
             key={article.title}
             title={article.title}
             description={article.description}
@@ -62,4 +62,4 @@ function PostsList() {
   )
 }
 
-export default PostsList;
+export default NewsList;

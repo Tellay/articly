@@ -1,4 +1,4 @@
-import { getAuth, signInWithPopup, GithubAuthProvider, signOut } from "firebase/auth";
+import { getAuth, signInWithPopup, GithubAuthProvider } from "firebase/auth";
 
 const provider = new GithubAuthProvider();
 
@@ -16,7 +16,7 @@ export const GithubAuthLogin = (setUser, sessionStorage) => {
         const errorCode = error.code;
         const errorMessage = error.message;
         const credential = GithubAuthProvider.credentialFromError(error);
-        console.log(errorCode, errorMessage, credential);
+        return console.log(errorCode, errorMessage, credential);
     });
 }
 

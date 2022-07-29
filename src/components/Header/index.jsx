@@ -26,8 +26,8 @@ function Header() {
 
                     <LinkButton
                         path={pathname}
-                        expectedPath={"/posts"}
-                        name="Posts"
+                        expectedPath={"/news"}
+                        name="News"
                     />
                 </ul>
             </nav>

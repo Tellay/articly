@@ -1,7 +1,7 @@
 import React from 'react';
 import dayjs from 'dayjs';
 
-function PostComponent({ title, description, publishedAt, url }) {
+function New({ title, description, publishedAt, url }) {
   return (
     <a href={url} target="_blank" rel="noreferrer" className='w-full cursor-pointer'>
       <p className='text-[16px] text-[#A8A8B3]'>{dayjs(publishedAt).format("D MMMM YYYY")}</p>
@@ -12,4 +12,4 @@ function PostComponent({ title, description, publishedAt, url }) {
   );
 }
 
-export default PostComponent;
+export default New;
